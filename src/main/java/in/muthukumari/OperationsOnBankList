@@ -3,25 +3,25 @@ package in.muthukumarip.transfermoney;
 import java.util.ArrayList;
 
 public class OperationsOnBankList {
-	static ArrayList<String> bank = new ArrayList<String>();
+	static ArrayList<String> banklist = new ArrayList<String>();
 
 	public static void addBankList(String bankName) {
-		//bank.add("Indian Bank");
-		//bank.add("Indian Overseas Bank");
-		//bank.add("Union Bank of India");
-		bank.add(bankName);
+		//banklist.add("Indian Bank");
+		//banklist.add("Indian Overseas Bank");
+		//banklist.add("Union Bank of India");
+		banklist.add(bankName);
 	}
 
 	public static int getNoOfBanks() {
 
-		int noOfBanks = bank.size();
+		int noOfBanks = banklist.size();
 		return noOfBanks;
 	}
 
 	public static void displayBankList() {
 
 		System.out.println("------------- List of Banks ------------");
-		for (String bankName : bank) {
+		for (String bankName : banklist) {
 			System.out.println(bankName);
 		}
 	}

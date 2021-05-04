@@ -3,25 +3,25 @@ package in.muthukumari;
 import java.util.ArrayList;
 
 public class OperationsOnBankList {
-	static ArrayList<String> banklist = new ArrayList<String>();
+	static ArrayList<String> bankList = new ArrayList<String>();
 
 	public static void addBankList(String bankName) {
-		//banklist.add("Indian Bank");
-		//banklist.add("Indian Overseas Bank");
-		//banklist.add("Union Bank of India");
-		banklist.add(bankName);
+		//bankList.add("Indian Bank");
+		//bankList.add("Indian Overseas Bank");
+		//bankList.add("Union Bank of India");
+		bankList.add(bankName);
 	}
 
 	public static int getNoOfBanks() {
 
-		int noOfBanks = banklist.size();
+		int noOfBanks = bankList.size();
 		return noOfBanks;
 	}
 
 	public static void displayBankList() {
 
 		System.out.println("------------- List of Banks ------------");
-		for (String bankName : banklist) {
+		for (String bankName : bankList) {
 			System.out.println(bankName);
 		}
 	}
